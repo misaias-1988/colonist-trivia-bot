@@ -7,7 +7,7 @@ const CHANNEL_ID = '1508951125867626710';
 const QUESTION = '🎲 **Board of the Day**\n\nIf this were your board, where would **YOU** put a settlement next? What would your strategy be for this game? 👇';
 const IMAGES_DIR = path.join(__dirname, 'images');
 const STATE_FILE = path.join(__dirname, 'state.json');
-const INTERVAL_MS = 1 * 60 * 1000; // 1 minute (TEST MODE — change back to 30 * 60 * 1000 for production)
+const INTERVAL_MS = 3 * 60 * 60 * 1000; // 3 hours
 
 function getState() {
   if (fs.existsSync(STATE_FILE)) {
